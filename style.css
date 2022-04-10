@@ -199,6 +199,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3rem;
 }
 
 .header-sessao h1{
@@ -207,7 +208,7 @@ header{
     font-size: 3rem;
     font-family: var(--font-primary);
     font-weight: 500;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 
 .conhecimentos{
@@ -217,8 +218,6 @@ header{
     grid-gap: 2.5rem;
     padding-bottom: 4rem;
 }
-
-
 
 .conhecimento:nth-child(1){
     grid-column: 4 / 7;
@@ -279,7 +278,46 @@ header{
 .imagem-wrapper img{
     object-fit: cover;
     width: 100%;
+    user-select: none;
 }
+
+.projetos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projeto{
+    width: 22rem;
+    height: 33rem;
+    background-color: blue;
+    border-radius: 1rem;
+    position: relative;
+
+
+}
+
+.projeto img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.projeto .conteudo{
+    
+    background: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
 
 
 
