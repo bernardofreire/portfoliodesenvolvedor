@@ -1,7 +1,5 @@
-# Portfolio
+:# Portfolio
 Portfólio Bernardo de desenvolvedor web
-
-Link do projeto(Ainda não finalizado): https://bernardofreire.github.io/portfoliodesenvolvedor/
 
 ## Tarefas
 

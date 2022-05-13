@@ -284,7 +284,8 @@ header{
 /* ============PROJETOS=========== */
 
 .sessao-projetos{
-    width: 100%;
+    width: 50%;
+    margin: auto auto;
     background-color: #f5f5f52d;
     border-top: 1px solid rgb(224, 224, 224);
     margin-bottom: 5rem;
@@ -292,8 +293,9 @@ header{
 
 .projetos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .card{
@@ -321,7 +323,7 @@ header{
 }
 
 .card:hover .card-img-wrapper img{
-    opacity: .5;
+    opacity: .2;
 }
 
 .card-info{
@@ -342,6 +344,8 @@ header{
     font-size: 2rem;
     font-weight: 500;
     color: #eee;
+    line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
 .card-info h3{
@@ -419,7 +423,13 @@ header{
 
 }
 
+/* Rodapé */
 
+footer{
+    text-align: center;
+    height: 2rem;
+    padding: 1.5rem;
+}
 
 
 
