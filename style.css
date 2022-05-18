@@ -42,12 +42,56 @@
 .show-menu .hamburguer{
     right: 15rem;
 }
+.show-menu .line:nth-child(1){
+    transform: rotate(45deg);
+    transition: all 500ms;
+    position: relative;
+    top: 8px;
+    width: 1.5rem;
+    box-shadow: none;
+    background-color: black;
+}
+.show-menu .line:nth-child(2){
+    position: relative;
+    transform: rotate(-45deg);
+    transition: all 500ms;
+    top: -3px;
+    width: 1.5rem;
+    box-shadow: none;
+    background-color: black;
+}
+
+
 
 .line{
     width: 100%;
     height: .1rem ;
     background-color: white;
     box-shadow: .1rem .1rem 2px;
+}
+
+/* Menu lado hamburguer */
+
+.container-hamburguer{
+    color: #444;
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 100;
+    right: 7rem;
+    top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 500ms;
+    user-select: none;
+    text-shadow: 2.1px 1px 1px white;
+}
+
+.show-menu .container-hamburguer{
+    right: 11rem;
 }
 /* Header */
 
@@ -478,7 +522,11 @@ footer{
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
+
+    
+
+
     .conhecimentos{
         display: grid;
         grid-template-columns: 1fr;
@@ -536,29 +584,41 @@ footer{
         margin: 2rem;
     }
 
+
+
 }
 
 @media (max-width: 1664px){
+
+    /* Menu barra */
+
+   
+    .sidebar{
+        width: 100%;
+        background-color: white ;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 12;
+        transition: all 500ms;
+    }
+    
+    .show-menu .sidebar{
+        right: 0;
+    }
+    
+    .menu ul a li {
+        font-size: 3rem;
+    }
+
+    .social-itens{
+        font-size: 4rem;
+    }
+
     .sessao-projetos{
         height: auto;
     }
+
 }
 
 
-.container-hamburguer{
-    color: #444;
-    font-size: 1.5rem;
-    width: 2.5rem;
-    height: 2rem;
-    border-radius: 5px;
-    position: fixed;
-    z-index: 100;
-    right: 6rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    transition: all 500ms;
-    user-select: none;
-    text-shadow: 2.1px 1px 1px white;
-}
