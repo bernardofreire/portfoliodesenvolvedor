@@ -17,8 +17,17 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    
 }
 
+body{
+    overflow: overlay;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 
 /* Tela principal */
@@ -40,7 +49,7 @@
 }
 
 .show-menu .hamburguer{
-    right: 15rem;
+    right: 19rem;
 }
 .show-menu .line:nth-child(1){
     transform: rotate(45deg);
@@ -93,6 +102,8 @@
 .show-menu .container-hamburguer{
     right: 11rem;
 }
+
+
 /* Header */
 
 header{
@@ -170,11 +181,11 @@ header{
 
 .sidebar{
     height: 100vh;
-    width: 20rem;
+    width: 25rem;
     background-color: white ;
     position: fixed;
     top: 0;
-    right: -20rem;
+    right: -25rem;
     z-index: 12;
     transition: all 500ms;
 }
@@ -183,14 +194,21 @@ header{
     right: 0;
 }
 
+.menu ul a li {
+    font-size: 2.3rem;
+}
 
+
+.social-itens a{
+    font-size: 3rem;
+}
 
 .menu{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    
 }
 
 .menu ul a{
@@ -331,7 +349,6 @@ header{
     width: 50%;
     height: 100vh;
     margin: auto auto;
-    background-color: #f5f5f52d;
     border-top: 1px solid rgb(224, 224, 224);
     margin-bottom: 5rem;
 }
@@ -483,12 +500,12 @@ footer{
 /* Scrollbar */
 
 ::-webkit-scrollbar{
-    background-color: rgb(138, 138, 138);
+    background: transparent;
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(63, 62, 62, 0.8);
     border-radius: 20px;
 
 }
@@ -584,15 +601,23 @@ footer{
         margin: 2rem;
     }
 
+    
 
 
 }
 
 @media (max-width: 1664px){
+  
 
+    .sessao-projetos{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 900px){
     /* Menu barra */
 
-   
     .sidebar{
         width: 100%;
         background-color: white ;
@@ -610,14 +635,12 @@ footer{
     .menu ul a li {
         font-size: 3rem;
     }
-
-    .social-itens{
-        font-size: 4rem;
+    
+    
+    .social-itens a{
+        font-size: 3.5rem;
     }
-
-    .sessao-projetos{
-        height: auto;
-    }
+    
 
 }
 
