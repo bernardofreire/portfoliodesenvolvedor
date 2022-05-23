@@ -49,13 +49,13 @@ html{
 }
 
 .show-menu .hamburguer{
-    right: 19rem;
+    right: 16rem;
 }
 .show-menu .line:nth-child(1){
     transform: rotate(45deg);
     transition: all 500ms;
     position: relative;
-    top: 8px;
+    top: 3px;
     width: 1.5rem;
     box-shadow: none;
     background-color: black;
@@ -64,7 +64,7 @@ html{
     position: relative;
     transform: rotate(-45deg);
     transition: all 500ms;
-    top: -3px;
+    top: -8px;
     width: 1.5rem;
     box-shadow: none;
     background-color: black;
@@ -144,7 +144,6 @@ header{
     text-shadow: .3rem .4rem 6px black;
     animation: moveBanner 1s 0.5s  forwards;
     opacity: 0;
-
 }
 
 .banner p{
@@ -181,11 +180,11 @@ header{
 
 .sidebar{
     height: 100vh;
-    width: 25rem;
+    width: 20.3rem;
     background-color: white ;
     position: fixed;
     top: 0;
-    right: -25rem;
+    right: -20.3rem;
     z-index: 12;
     transition: all 500ms;
 }
@@ -195,7 +194,7 @@ header{
 }
 
 .menu ul a li {
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 
@@ -206,7 +205,7 @@ header{
 .menu{
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%,-50%);
     
 }
@@ -214,7 +213,7 @@ header{
 .menu ul a{
     color: black;
     font-size: 1.8rem;
-    line-height: 2;
+    line-height: 1.7;
     transition: all 500ms;
 }
 
@@ -228,7 +227,6 @@ header{
     bottom: 12%;
     display: flex;
     justify-content: space-evenly;
-    font-size: 2rem;
     color: white;
 }
 
@@ -238,6 +236,7 @@ header{
     border-radius: 5px;
     cursor: pointer;
     transition: all 500ms;
+    font-size: 2rem;
 }
 
 .social-itens i:hover{
@@ -355,7 +354,7 @@ header{
 
 .projetos{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -365,6 +364,7 @@ header{
     height: 25rem;
     position: relative;
     overflow: hidden;
+    min-width: 14rem;
 }
 
 .card-img-wrapper{
@@ -541,54 +541,55 @@ footer{
 
 @media screen and (max-width:768px){
 
-    
 
+    /* Banner */
+
+    .banner h1{
+        font-size: 2.5rem;
+    }
+
+   
+
+    /* Conhecimentos */
 
     .conhecimentos{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-rows: repeat(10, 4rem);
-        grid-gap: 5rem;
-        padding-bottom: 4rem;
     }
     
     .conhecimento:nth-child(1){
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
     
     .conhecimento:nth-child(2){
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
     
     .conhecimento:nth-child(3){
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
     
     .conhecimento:nth-child(4){
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 4 / 5;
     }
     
     .conhecimento:nth-child(5){
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 5 / 6;
     }
     
     
     .imagem-wrapper{
-        grid-column: 3/4;
-        grid-row: 7 / 8;
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
         width: 100%;
     }
     
-    .imagem-wrapper img{
-        object-fit: cover;
-        width: 100%;
-        user-select: none;
-    }
 
     .sessao-projetos{
         height: auto;
@@ -633,14 +634,26 @@ footer{
     }
     
     .menu ul a li {
-        font-size: 3rem;
+        font-size: 2rem;
+        line-height: 2.2;
     }
     
-    
+
     .social-itens a{
-        font-size: 3.5rem;
+        font-size: 2.6rem;
+    }
+
+    .show-menu .hamburguer{
+        right: 80%;
+    }
+
+    .menu ul {
+        position: relative;
     }
     
+    .container-hamburguer{
+        display: none;
+    }
 
 }
 
