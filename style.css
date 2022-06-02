@@ -7,8 +7,10 @@
 
 :root{
     --color-primary:#2193b0;
+    --color-secunday:#0e758f;
     --font-primary:"Baloo Da 2";
     --font-secundary: "Josefin Slab";
+    --background-color-primary: #f5f5f5; 
 }
 
 *{
@@ -245,12 +247,18 @@ header{
     color: rgba(0, 0, 0, 0.63);
 }
 
+/* Sobre */
+
+.sessao-sobre{
+    width: 100%;
+    height: 100vh;
+}
 
 
 /* Conhecimento */
 
 .sessao-conhecimento{
-    background-color: #f5f5f5;
+    background-color: var(--background-color-primary);
     width: 100%;
 }
 
@@ -451,11 +459,8 @@ header{
 
 .sessao-contato{
     width: 100%;
-    height: 100vh;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 3rem;
+    background-color: var(--background-color-primary);
 }
 
 .sessao-contato .container-contato {
@@ -463,6 +468,9 @@ header{
     height: 80vh;
     border: 1px solid black;
     display: flex;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .sessao-contato .container-contato .container-left{
@@ -473,7 +481,10 @@ header{
     background-size: cover;
     background-position: center;
     opacity: .8;
-    background-image: linear-gradient(180deg, black, yellow)}
+    background-image: url(/imagens/img-contato.jpg);
+    border-radius: 1rem 0 0 1rem;
+
+}
 
 .sessao-contato .container-contato .container-right{
     width: 65%;
@@ -487,14 +498,14 @@ header{
 footer{
     text-align: center;
     height: 2rem;
-    padding: 1.5rem;
-    background-color: #444;
+    padding: 1rem 0 2rem 0;
+    background-image: radial-gradient(circle at 46.88% 14.36%, #04809c 0, #3cb5f2 50%, #0094e6 75%, #0076db 100%);
     color: white;
 }
 
 
 
-/* Scrollbar */
+/*============== Scrollbar ============== */
 
 ::-webkit-scrollbar{
     background: transparent;
@@ -507,7 +518,7 @@ footer{
 
 }
 
-/* Animation */
+/* ============== Animation ============== */
 
 @keyframes zoom{
     0%{
@@ -535,6 +546,8 @@ footer{
     }
 }
 
+
+/* ============== MEDIA SCREEN RESPONSIVE ============== */
 
 @media screen and (max-width:768px){
 
