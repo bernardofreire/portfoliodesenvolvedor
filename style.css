@@ -280,17 +280,18 @@ header {
 
 .banner button {
     padding: 10px 40px;
-    background: var(--color-primary);
-    border: none;
+    background: #f9004fb6;
     color: white;
     font-family: "Baloo Da 2", serif;
     letter-spacing: .1rem;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
+    border: 1px solid #7777771a;
     animation: moveBanner 1s 0.9s forwards;
     opacity: 0;
     transition: all 300ms ease;
+    margin-right: 1rem;
 }
 
 .banner button:hover {
@@ -792,7 +793,7 @@ footer {
     .conhecimentos {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(10, 4rem);
+        grid-template-rows: repeat(6, 4rem);
     }
 
     .conhecimento:nth-child(1) {
